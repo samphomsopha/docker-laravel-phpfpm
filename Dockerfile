@@ -37,3 +37,6 @@ RUN mkdir -p /data
 VOLUME ["/data"]
 
 EXPOSE 9000
+
+ENTRYPOINT ["/usr/sbin/php5-fpm", "-F"]
+
